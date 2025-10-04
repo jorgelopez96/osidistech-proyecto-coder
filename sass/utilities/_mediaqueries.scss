@@ -1,0 +1,18 @@
+@media (max-width: 900px) {
+  .container-main,
+  .container-about {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .imagen-about { order: 2; }
+  .text-about { order: 1; }
+
+  .contacto-container { flex-direction: column; }
+  .quienes-content,
+  .quienes-persona {
+    flex-direction: column;
+    text-align: center;
+  }
+}

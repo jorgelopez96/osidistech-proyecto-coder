@@ -1,15 +1,34 @@
+.container-about .text-about h2, .container-main .text-main h1 {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.container-about .text-about p, .container-main .text-main p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.container-about .text-about h2, .container-main .text-main h1 {
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.container-about .text-about p, .container-main .text-main p {
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Estilos del Index */
-
+/* Navbar */
 .nav-item a {
   color: #000;
 }
-
 .nav-item a:hover {
   color: #6b4fbb;
 }
@@ -17,161 +36,148 @@
 .navbar-toggler {
   border: none;
 }
-
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
-/* Main */ /* Descripcion del h1 */
+/* Main */
 .container-main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px;
+  flex-direction: row;
   gap: 30px;
+  padding: 50px;
   flex-wrap: wrap;
 }
-
-.text-main {
+.container-main .text-main {
   flex: 1;
   min-width: 280px;
 }
-
-.text-main h1 {
+.container-main .text-main h1 {
   color: #3d2670;
-  font-weight: 800;
-  margin-bottom: 20px;
   font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
-
-.text-main p {
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
+.container-main .text-main p {
   font-size: clamp(1rem, 1.2vw, 1.3rem);
 }
-
-.imagen-main {
-  flex: 1;
-  max-width: 40%;
-  display: flex;
-  justify-content: center;
-}
-
-.imagen-main img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-}
-
-/* Boton del main */
-section a {
+.container-main .text-main a {
   display: inline-block;
   background-color: #6b4fbb;
   color: white;
   padding: 8px 20px;
   border-radius: 20px;
-  font-size: 1rem;
   text-decoration: none;
   transition: background 0.3s ease;
 }
-
-section a:hover {
+.container-main .text-main a:hover {
   background-color: #54379c;
 }
-
-/* INDEX - Descripcion del about */
-
-.container-about {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 50px;
-  gap: 30px;
-  flex-wrap: wrap;
-}
-
-.text-about {
-  flex: 1;
-  min-width: 280px;
-}
-
-.text-about h2 {
-  color: #3d2670;
-  font-weight: 800;
-  margin-bottom: 20px;
-  font-size: clamp(1.5rem, 2.5vw, 3rem);
-}
-
-.text-about p {
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  font-size: clamp(1rem, 1.2vw, 1.3rem);
-}
-
-.imagen-about {
+.container-main .imagen-main {
   flex: 1;
   max-width: 40%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
 }
-
-.imagen-about img {
+.container-main .imagen-main img {
   width: 100%;
   max-width: 400px;
   border-radius: 20px;
 }
 
-/* ESTILOS DE CONTACTO.html*/
+/* About */
+.container-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 30px;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+.container-about .text-about {
+  flex: 1;
+  min-width: 280px;
+}
+.container-about .text-about h2 {
+  color: #3d2670;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+.container-about .text-about p {
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+}
+.container-about .text-about a {
+  display: inline-block;
+  background-color: #6b4fbb;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+.container-about .text-about a:hover {
+  background-color: #54379c;
+}
+.container-about .imagen-about {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.container-about .imagen-about img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
 
+/* Contacto */
 .contacto-container {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
   align-items: stretch;
+  flex-direction: row;
+  gap: 20px;
   margin: 40px auto;
   max-width: 1200px;
   padding: 0 20px;
 }
-
-.contacto-info {
+.contacto-container .contacto-info {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-.info h1 {
+.contacto-container .contacto-info .info h1 {
   font-size: clamp(1.5rem, 2.5vw, 3rem);
   margin-top: 0;
   color: blueviolet;
 }
-
-.info {
+.contacto-container .contacto-info .info {
   font-size: 14px;
   line-height: 1.6;
-  color: #000000;
+  color: #000;
 }
-
-/* Formulario */
-
-.formulario {
+.contacto-container .formulario {
   background: #fff;
   padding: 25px;
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   flex: 1;
 }
-
-.formulario label {
+.contacto-container .formulario label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
   color: #2c3e50;
 }
-
-.formulario input,
-.formulario textarea {
+.contacto-container .formulario input,
+.contacto-container .formulario textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -179,8 +185,7 @@ section a:hover {
   border-radius: 5px;
   font-size: 14px;
 }
-
-.formulario button {
+.contacto-container .formulario button {
   background: #27ae60;
   color: #fff;
   border: none;
@@ -190,20 +195,16 @@ section a:hover {
   cursor: pointer;
   transition: background 0.3s;
 }
-
-.formulario button:hover {
+.contacto-container .formulario button:hover {
   background: #219150;
 }
-
-/* Mapa */
-
-.contacto-mapa {
+.contacto-container .contacto-mapa {
   flex: 1;
   display: flex;
   align-items: stretch;
+  min-height: 300px;
 }
-
-.maps {
+.contacto-container .contacto-mapa .maps {
   width: 100%;
   border: 0;
   border-radius: 8px;
@@ -212,12 +213,7 @@ section a:hover {
   aspect-ratio: 1/1;
 }
 
-.contacto-mapa {
-  min-height: 300px;
-}
-
-/* QUIENES SOMOS */
-
+/* Quienes somos */
 .quienes-container {
   padding: 60px 50px;
   max-width: 1200px;
@@ -225,114 +221,91 @@ section a:hover {
   color: #333;
   line-height: 1.6;
 }
-
-.quienes-header h2 {
+.quienes-container .quienes-header h2 {
   font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   color: #3d2670;
   margin-bottom: 10px;
 }
-
-.quienes-header h2 span {
+.quienes-container .quienes-header h2 span {
   color: #6b4fbb;
 }
-
-.quienes-header h3 {
+.quienes-container .quienes-header h3 {
   color: #3d2670;
   font-weight: 800;
   margin-bottom: 15px;
   font-size: 1.3rem;
 }
-
-.quienes-header p {
+.quienes-container .quienes-header p {
   font-size: 1rem;
   max-width: 800px;
   margin-bottom: 40px;
 }
-
-.quienes-content {
+.quienes-container .quienes-content {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
   gap: 40px;
   flex-wrap: wrap;
   margin-bottom: 60px;
 }
-
-.quienes-text {
+.quienes-container .quienes-content .quienes-text {
   flex: 1;
   min-width: 300px;
 }
-
-.quienes-text h4 {
+.quienes-container .quienes-content .quienes-text h4 {
   color: #3d2670;
   margin-bottom: 10px;
   font-weight: bold;
 }
-
-.quienes-img {
+.quienes-container .quienes-content .quienes-img {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+  gap: 0;
   min-width: 300px;
 }
-
-.quienes-img img {
+.quienes-container .quienes-content .quienes-img img {
   width: 100%;
   max-width: 400px;
   border-radius: 20px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
-/* Sección persona */
-.quienes-persona {
+.quienes-container .quienes-persona {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: row;
   gap: 30px;
   flex-wrap: wrap;
 }
-
-.quienes-persona img {
+.quienes-container .quienes-persona img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #6b4fbb;
 }
-
-.quienes-persona-info {
+.quienes-container .quienes-persona .quienes-persona-info {
   flex: 1;
   min-width: 250px;
 }
-
-.frase {
+.quienes-container .quienes-persona .quienes-persona-info .frase {
   font-style: italic;
   color: #6b4fbb;
   font-weight: 600;
   margin-bottom: 15px;
 }
-
-.quienes-persona-info h5 {
+.quienes-container .quienes-persona .quienes-persona-info h5 {
   margin-top: 15px;
   color: #3d2670;
   font-weight: bold;
 }
-
-.quienes-persona-info span {
+.quienes-container .quienes-persona .quienes-persona-info span {
   color: #666;
   font-size: 0.9rem;
-}
-
-/* Responsive */
-@media (max-width: 900px) {
-  .quienes-content {
-    flex-direction: column;
-  }
-
-  .quienes-persona {
-    flex-direction: column;
-    text-align: center;
-  }
 }
 
 /* Footer */
@@ -340,76 +313,57 @@ footer {
   background: #f8f9fa;
   padding: 20px 20px 0;
 }
-
 footer a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
-
 footer a:hover {
   color: #6b4fbb;
 }
-
-.grid-container-footer {
+footer .grid-container-footer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
   gap: 20px;
   flex-wrap: wrap;
 }
-
-.footer-left,
-.footer-center,
-.footer-right {
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
   flex: 1;
   min-width: 200px;
   text-align: center;
-  margin-bottom: 10x;
 }
-
-/* Copyright */
-.footer-copy {
+footer .footer-copy {
   text-align: center;
-  color: #000000;
+  color: #000;
   background: #f8f9fa;
   padding: 10px;
-  margin-top: 10px; /* espacio entre bloques y copy */
+  margin-top: 10px;
 }
 
-/* Responsive */
-
-/* INICIO - MAIN Responsive */
 @media (max-width: 900px) {
-  .container-main {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px 20px;
-  }
-}
-
-/* MAIN - QUIENES SOMOS RESPONSIVE */
-@media (max-width: 900px) {
+  .container-main,
   .container-about {
     flex-direction: column;
     text-align: center;
     padding: 30px 20px;
   }
-
   .imagen-about {
     order: 2;
   }
-
   .text-about {
     order: 1;
   }
-}
-
-/* CONTACTO.html - Responsive*/
-@media (max-width: 900px) {
   .contacto-container {
     flex-direction: column;
   }
-
-  .contacto-mapa {
-    min-height: 300px;
+  .quienes-content,
+  .quienes-persona {
+    flex-direction: column;
+    text-align: center;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
