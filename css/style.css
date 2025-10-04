@@ -1,24 +1,28 @@
-.container-about .text-about h2, .container-main .text-main h1 {
+.container-about .text-about h2,
+.container-main .text-main h1 {
   font-weight: 800;
   margin-bottom: 20px;
 }
 
-.container-about .text-about p, .container-main .text-main p {
+.container-about .text-about p,
+.container-main .text-main p {
   line-height: 1.6;
   color: #333;
 }
 
-.container-about .text-about h2, .container-main .text-main h1 {
+.container-about .text-about h2,
+.container-main .text-main h1 {
   font-weight: 800;
   margin-bottom: 20px;
 }
 
-.container-about .text-about p, .container-main .text-main p {
+.container-about .text-about p,
+.container-main .text-main p {
   line-height: 1.6;
   color: #333;
 }
 
-/* Reset */
+/* Reset de pagina */
 * {
   margin: 0;
   padding: 0;
@@ -88,7 +92,7 @@
   border-radius: 20px;
 }
 
-/* About */
+/* About - Quienes somos */
 .container-about {
   display: flex;
   justify-content: space-between;
@@ -342,6 +346,8 @@ footer .footer-copy {
   padding: 10px;
   margin-top: 10px;
 }
+
+/* Responsive */
 
 @media (max-width: 900px) {
   .container-main,
