@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OsidisTech</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- AOS Efectos para las imagenes -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <!-- Logo con imagen -->
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./assets/images/OsidisTech-Logo.png"
+            alt="Logo Osidis"
+            width="150"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >Inicio</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/quienes-somos.html"
+                >¿Quiénes somos?</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+
+    <!-- Descripcion con el h1 -->
+
+    <main>
+      <section class="container-main">
+        <div class="text-main">
+          <h1>
+            Ofrecemos diseños, estrategias y creatividad para que tu negocio
+            crezca en el mundo digital.
+          </h1>
+          <p>Basándonos en procesos, estratégias y metodologías exitosas</p>
+
+          <a href="./pages/servicios.html" alt="Ver Mas" class="vermas-button"
+            >Ver Mas</a
+          >
+        </div>
+
+        <div class="imagen-main" data-aos="fade-left">
+          <img src="./assets/images/personas-oficina.png" alt="ImagenInicio" />
+        </div>
+      </section>
+    </main>
+
+    <!-- Descripcion con el h2 -->
+
+    <section class="container-about">
+      <div class="imagen-about" data-aos="fade-right">
+        <img src="./assets/images/oficina.png" alt="Imagen About" />
+      </div>
+      <div class="text-about">
+        <h2>¿Quienes Somos?</h2>
+        <p>
+          Somos una agencia especializada en el desarrollo de sitios web
+          profesionales en HTML, orientados a potenciar la presencia digital de
+          las marcas. Brindamos soluciones integrales que abarcan desde el
+          diseño visual hasta la optimización del código, garantizando una
+          experiencia rápida, funcional y adaptable a todos los dispositivos.
+          Nuestro equipo está conformado por expertos en diseño y programación
+          que trabajan con dedicación para ofrecer proyectos innovadores,
+          enfocados en la calidad, la estética y el rendimiento de cada página
+          web.
+        </p>
+        <a href="./pages/contacto.html">Agendar una cita</a>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="grid-container-footer">
+        <div class="footer-left">
+          <h5>NOSOTROS</h5>
+          <p>
+            Somos una empresa dedicada a la creacion de paginas web para que
+            puedas llevar tu negocio al proximo nivel.
+          </p>
+        </div>
+
+        <div class="footer-center">
+          <h5><a href="./pages/contacto.html">CONTACTO</a></h5>
+          <p>📍 Dirección: av. belgrano 123</p>
+          <p>📞 Tel: +54 11 1234-5678</p>
+          <p>✉️ contacto@osidistech.com</p>
+        </div>
+
+        <div class="footer-right">
+          <p>
+            <a href="./index.html"><b>Inicio</b></a>
+          </p>
+          <p><a href="#">Clientes</a></p>
+          <p><a href="#">Servicios</a></p>
+          <p><a href="#">¿Quienes somos?</a></p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copy">
+        <small>&copy; 2025 OsidisTech. Todos los derechos reservados.</small>
+      </div>
+    </footer>
+
+    <!-- script bootstrap -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- AOS Script imagenes -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

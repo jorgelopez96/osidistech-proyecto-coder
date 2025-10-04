@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>¿Quienes Somos?</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <!-- AOS Efectos para las imagenes -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <!-- Logo con imagen -->
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="../assets/images/OsidisTech-Logo.png"
+            alt="Logo Osidis"
+            width="150"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./quienes-somos.html"
+                >¿Quiénes somos?</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sección ¿Quiénes somos? -->
+    <section class="quienes-container">
+      <div class="quienes-header">
+        <h2>
+          <span>OsidisTech</span> es <strong>creatividad y tecnología</strong>
+        </h2>
+        <h3>¡Nos apasiona el desarrollo web!</h3>
+        <p>
+          Somos un equipo especializado en diseño y desarrollo de sitios web
+          profesionales en HTML, CSS y JavaScript. Nos enfocamos en crear
+          experiencias digitales únicas que ayuden a las marcas a destacarse en
+          el mundo online.
+        </p>
+      </div>
+
+      <div class="quienes-content">
+        <div class="quienes-text">
+          <h4>¿Qué hacemos?</h4>
+          <p>
+            Diseñamos y desarrollamos sitios web adaptativos, modernos y
+            optimizados para todos los dispositivos. Nuestro enfoque se centra
+            en la funcionalidad, la velocidad y el diseño atractivo.
+          </p>
+
+          <h4>¿Por qué elegirnos?</h4>
+          <p>
+            Porque trabajamos junto a vos en cada paso del proceso, escuchando
+            tus ideas y transformándolas en una página web que refleje la
+            identidad de tu negocio.
+          </p>
+
+          <h4>Nuestra misión</h4>
+          <p>
+            Acompañar a cada cliente en su transformación digital, brindando
+            soluciones web personalizadas y de alto impacto.
+          </p>
+        </div>
+
+        <div class="quienes-img" data-aos="fade-left">
+          <img src="../assets/images/html.jpg" alt="Equipo de trabajo" />
+        </div>
+      </div>
+
+      <div class="quienes-persona">
+        <img
+          src="../assets/images/jorge.png"
+          alt="Director"
+          data-aos="flip-right"
+        />
+        <div class="quienes-persona-info">
+          <p class="frase">
+            "El mejor proyecto es aquel que evoluciona junto a tus ideas"
+          </p>
+          <p>
+            Como lider de OsidisTech, me dedico a convertir ideas en realidades
+            digitales. Nuestra meta es ayudarte a construir una presencia web
+            sólida, profesional y con estilo propio.
+          </p>
+          <h5>Jorge Manuel Lopez Acevedo</h5>
+          <span>Desarrollador web</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="grid-container-footer">
+        <div class="footer-left">
+          <h5>NOSOTROS</h5>
+          <p>
+            Somos una empresa dedicada a la creación de páginas web para que
+            puedas llevar tu negocio al próximo nivel.
+          </p>
+        </div>
+
+        <div class="footer-center">
+          <h5><a href="./contacto.html">CONTACTO</a></h5>
+          <p>📍 Dirección: Av. Belgrano 123</p>
+          <p>📞 Tel: +54 11 1234-5678</p>
+          <p>✉️ contacto@osidistech.com</p>
+        </div>
+
+        <div class="footer-right">
+          <p>
+            <a href="../index.html"><b>Inicio</b></a>
+          </p>
+          <p><a href="#">Clientes</a></p>
+          <p><a href="./servicios.html">Servicios</a></p>
+          <p><a href="./quienes-somos.html">¿Quiénes somos?</a></p>
+        </div>
+      </div>
+
+      <div class="footer-copy">
+        <small>&copy; 2025 OsidisTech. Todos los derechos reservados.</small>
+      </div>
+    </footer>
+
+    <!-- script bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AOS Script imagenes -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

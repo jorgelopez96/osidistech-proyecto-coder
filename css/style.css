@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del Index */
+
+.nav-item a {
+  color: #000;
+}
+
+.nav-item a:hover {
+  color: #6b4fbb;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Main */ /* Descripcion del h1 */
+.container-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.text-main {
+  flex: 1;
+  min-width: 280px;
+}
+
+.text-main h1 {
+  color: #3d2670;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+.text-main p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+}
+
+.imagen-main {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-main img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+/* Boton del main */
+section a {
+  display: inline-block;
+  background-color: #6b4fbb;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+section a:hover {
+  background-color: #54379c;
+}
+
+/* INDEX - Descripcion del about */
+
+.container-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.text-about {
+  flex: 1;
+  min-width: 280px;
+}
+
+.text-about h2 {
+  color: #3d2670;
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+.text-about p {
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: clamp(1rem, 1.2vw, 1.3rem);
+}
+
+.imagen-about {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-about img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+/* ESTILOS DE CONTACTO.html*/
+
+.contacto-container {
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.contacto-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info h1 {
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  margin-top: 0;
+  color: blueviolet;
+}
+
+.info {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+/* Formulario */
+
+.formulario {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex: 1;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.formulario button {
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario button:hover {
+  background: #219150;
+}
+
+/* Mapa */
+
+.contacto-mapa {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+}
+
+.maps {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  min-height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.contacto-mapa {
+  min-height: 300px;
+}
+
+/* QUIENES SOMOS */
+
+.quienes-container {
+  padding: 60px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #333;
+  line-height: 1.6;
+}
+
+.quienes-header h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+  color: #3d2670;
+  margin-bottom: 10px;
+}
+
+.quienes-header h2 span {
+  color: #6b4fbb;
+}
+
+.quienes-header h3 {
+  color: #3d2670;
+  font-weight: 800;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.quienes-header p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.quienes-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.quienes-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.quienes-text h4 {
+  color: #3d2670;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.quienes-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.quienes-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección persona */
+.quienes-persona {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.quienes-persona img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #6b4fbb;
+}
+
+.quienes-persona-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.frase {
+  font-style: italic;
+  color: #6b4fbb;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.quienes-persona-info h5 {
+  margin-top: 15px;
+  color: #3d2670;
+  font-weight: bold;
+}
+
+.quienes-persona-info span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .quienes-content {
+    flex-direction: column;
+  }
+
+  .quienes-persona {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Footer */
+footer {
+  background: #f8f9fa;
+  padding: 20px 20px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+footer a:hover {
+  color: #6b4fbb;
+}
+
+.grid-container-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  margin-bottom: 10x;
+}
+
+/* Copyright */
+.footer-copy {
+  text-align: center;
+  color: #000000;
+  background: #f8f9fa;
+  padding: 10px;
+  margin-top: 10px; /* espacio entre bloques y copy */
+}
+
+/* Responsive */
+
+/* INICIO - MAIN Responsive */
+@media (max-width: 900px) {
+  .container-main {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+}
+
+/* MAIN - QUIENES SOMOS RESPONSIVE */
+@media (max-width: 900px) {
+  .container-about {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .imagen-about {
+    order: 2;
+  }
+
+  .text-about {
+    order: 1;
+  }
+}
+
+/* CONTACTO.html - Responsive*/
+@media (max-width: 900px) {
+  .contacto-container {
+    flex-direction: column;
+  }
+
+  .contacto-mapa {
+    min-height: 300px;
+  }
+}
